@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>SR University</h1>
+            <h2>Online Student Attendance Management System</h2>
+            <p class="date" id="today"></p>
+        </header>
+
+        <h3>Student Attendance</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Roll Number</th>
+                    <th>Attendance Status</th>
+                    <th>Mark Attendance</th>
+                </tr>
+            </thead>
+            <tbody id="student-list">
+                <tr>
+                    <td>Jayavardhan</td>
+                    <td>2403A52330</td>
+                    <td class="status">Not Marked</td>
+                    <td>
+                        <button class="present" data-status="Present">Present</button>
+                        <button class="absent" data-status="Absent">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student 2</td>
+                    <td>2403A52331</td>
+                    <td class="status">Not Marked</td>
+                    <td>
+                        <button class="present" data-status="Present">Present</button>
+                        <button class="absent" data-status="Absent">Absent</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Student 3</td>
+                    <td>2403A52332</td>
+                    <td class="status">Not Marked</td>
+                    <td>
+                        <button class="present" data-status="Present">Present</button>
+                        <button class="absent" data-status="Absent">Absent</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section class="summary" aria-label="Attendance summary">
+            <div><strong id="total">3</strong>Total Students</div>
+            <div><strong id="present-count">0</strong>Present</div>
+            <div><strong id="absent-count">0</strong>Absent</div>
+        </section>
+        <footer>Demo project for Git and GitHub Pages practical</footer>
+    </main>
+</body>
+</html>
